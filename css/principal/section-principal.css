@@ -77,8 +77,7 @@
         display: flex;
         flex-direction:column-reverse;
         align-items: center;
-        padding: 25px 30px;
-        margin-left: 35px;
+        padding: 25px 20px;
     }
     .container-principal{
         display: flex;
@@ -87,6 +86,14 @@
     }
     .container-principal > h1{
         font-size: 40px;
+        width: auto;
+    }
+    .container-principal > p{
+        width: auto;
+    }
+    .container-clientes{
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .imagem-principal{
         display: none;
