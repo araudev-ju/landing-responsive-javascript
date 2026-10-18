@@ -1,0 +1,26 @@
+/*
+Fontes
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+Reset CSS
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color:hsl(0, 0%, 98%);
+    --paragraph-color: hsl(0, 0%, 41%);
+    --text-color: hsl(0, 0%, 8%);
+}
+
+body{
+    font-family: 'Epilogue', sans-serif;
+    max-height: 200vh;
+}

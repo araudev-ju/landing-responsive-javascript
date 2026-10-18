@@ -1,0 +1,114 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 40px;
+}
+
+.container-nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav > ul{
+    display: flex;
+    gap: 30px;
+}
+
+nav > ul > li{
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: var(--paragraph-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.container-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-login{
+    text-decoration: none;
+    color: var(--paragraph-color);
+}
+
+.btn-register{
+    background: transparent;
+    border: 1px solid var(--paragraph-color);
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#caixa-features{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    top: 30px;
+    right: 0;
+    cursor: pointer;
+}
+
+#caixa-features.mostrar{
+    display: block;
+}
+
+#caixa-company{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    top: 30px;
+    left: 0;
+    cursor: pointer;
+}
+
+#caixa-company > li{
+    margin-bottom: 10px;
+}
+
+#caixa-company > li:last-child {
+    margin-bottom: 0;
+}
+
+#caixa-company.aparecer{
+    display: block;
+}
+
+.imagem-mobile{
+    display: none;
+}
+
+@media(max-width:440px){
+    header{
+        padding: 20px 30px;
+    }
+    nav{
+        display: none;
+    }
+    .container-user{
+        display: none;
+    }
+    .imagem-mobile{
+        display: flex;
+    }
+}

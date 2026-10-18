@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./imagens/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="container-nav">
+        <img src="./imagens/logo.svg" alt="logo snap" class="logo" />
+        <nav>
+          <ul>
+            <li>
+              <a href="#" id="featuresLinks">Features <img src="./imagens/icon-arrow-down.svg" alt="seta para baixo" id="seta-features"></a>
+              <ul id="caixa-features">
+                <li>  
+                  <img src="./imagens/icon-todo.svg" alt="todo-list">
+                  Todo-List
+                </li>
+                <li>
+                  <img src="./imagens/icon-calendar.svg" alt="calendario">
+                  Calendar
+                </li>
+                <li>
+                  <img src="./imagens/icon-reminders.svg" alt="notificacoes">
+                  Reminders
+                </li>
+                <li>
+                  <img src="./imagens/icon-planning.svg" alt="planning">
+                  Planning
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" id="companyLinks">Company <img src="./imagens/icon-arrow-down.svg" alt="seta para baixo" id="seta-company"></a>
+              <ul id="caixa-company">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="imagem-mobile" id="hamburguer">
+        <img src="./imagens/icon-menu.svg" alt="menu hamburguer">
+      </div>
+      <div class="container-user">
+        <a href="#" class="btn-login">Login</a>
+        <button class="btn-register">Register</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-principal">
+        <div class="container-principal">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn-learn">Learn more</button>  
+          <div class="container-clientes">
+            <img src="./imagens/client-databiz.svg" alt="clientes" class="clientes">
+            <img src="./imagens/client-audiophile.svg" alt="cliente" class="clientes-phile">
+            <img src="./imagens/client-meet.svg" alt="clientes" class="clientes">
+            <img src="./imagens/client-maker.svg" alt="clientes" class="clientes">
+          </div>      
+        </div>
+        <img
+          src="./imagens/image-hero-desktop.png"
+          alt="imagem colorida com formas e um homem mexendo no notebook"
+          class="imagem-principal"
+        />
+        <img src="./imagens/image-hero-mobile.png" alt="imagem colorida com formas e um homem mexendo no notebook" class="imagem-principal-mobile">
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
