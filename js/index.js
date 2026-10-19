@@ -6,6 +6,9 @@ const botaoCompany = document.getElementById("companyLinks");
 const menuCompany = document.getElementById("caixa-company");
 const setasCompany = document.getElementById("seta-company");
 
+const BotaoHamburguer = document.getElementById("hamburguer");
+const iconeHamburguer = document.getElementById("icone-hamburguer");
+const menuPrincipal = document.querySelector("nav");
 
 
 botaoFeatures.addEventListener("click", function(){
@@ -25,5 +28,17 @@ botaoCompany.addEventListener("click", function(){
         setasCompany.src = "./imagens/icon-arrow-up.svg";
     } else {
         setasCompany.src = "./imagens/icon-arrow-down.svg";
+    }
+});
+
+BotaoHamburguer.addEventListener("click", function(){
+    menuPrincipal.classList.toggle("menu-mobile-ativo");
+    
+    const menuAberto = menuPrincipal.classList.contains("menu-mobile-ativo");
+
+    if(menuAberto == true){
+        iconeHamburguer.src = "./imagens/icon-close-menu.svg";
+    } else {
+        iconeHamburguer.src = "./imagens/icon-menu.svg";
     }
 });
